@@ -9,7 +9,8 @@ public with sharing class GEO_AccountAuraCtrl {
 		this(new DB_AccountSelector());
     }
     
-    public static List<Account> findAll() {
+    @AuraEnabled
+    public static List<Account> findAllLocatedAccounts() {
     	return (new GEO_AccountAuraCtrl()).selectWithLocation();
     }
     
