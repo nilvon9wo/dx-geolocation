@@ -1,6 +1,7 @@
 <aura:component controller="GEO_AccountAuraCtrl">
 	<aura:attribute name="accountList" type="Account[]" />
 	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<aura:registerEvent name="accountsLoaded" type="c:GEO_AccountsLoaded" />
 	<!-- 
 		ltng:require styles="/resource/leaflet/leaflet.css" scripts="/resource/leaflet/leaflet.js" afterScriptsLoaded="{!c.doInit}" />
 	 -->

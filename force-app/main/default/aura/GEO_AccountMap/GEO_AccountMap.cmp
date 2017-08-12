@@ -1,5 +1,7 @@
 <aura:component controller="GEO_AccountAuraCtrl">
-	<aura:attribute name="name" type="Object" />
+	<aura:attribute name="map" type="Object" />
+	<aura:handler event="c:GEO_AccountsLoaded" action="{!c.accountsLoaded}" />
+	
 	<ltng:require styles="/resource/leaflet/leaflet.css" 
 		scripts="/resource/leaflet/leaflet.js" 
 		afterScriptsLoaded="{!c.jsLoaded}" 
