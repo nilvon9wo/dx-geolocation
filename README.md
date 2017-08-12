@@ -10,5 +10,5 @@
 
 
 ## Issues
-
+SFDX is not connecting to scratch orgs as expected.
 
